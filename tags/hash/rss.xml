@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hash on 守護台灣 - Vishnu卓</title><link>https://vishnucho.github.io/tags/hash/</link><description>Recent content in hash on 守護台灣 - Vishnu卓</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 28 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://vishnucho.github.io/tags/hash/rss.xml" rel="self" type="application/rss+xml"/><item><title>公正雜湊驗證機制</title><link>https://vishnucho.github.io/math/provably-fair/</link><pubDate>Sat, 28 May 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/math/provably-fair/</guid><description>&lt;h1 id="公正雜湊驗證機制">公正雜湊驗證機制&lt;/h1>
+&lt;p>根據雜湊不可逆原理達成的玩家信任機制。&lt;/p>
+&lt;h2 id="玩家驗證角度看流程圖">玩家驗證角度看流程圖&lt;/h2>
+&lt;div class="mermaid" align="center" >
+sequenceDiagram
+Client->>Server: Client_Seed_A
+Server->>Client: Hashed_Server_Seed_A
+loop Client Nonce++
+Client->>Client: Playing
+end
+Client->>Server: new Client_Seed_B
+Server->>Client: Server_Seed_A, Hashed_Server_Seed_B
+Note left of Client: Check "Server_Seed_A" &amp; "Hashed_Server_Seed_A"
+loop Client Nonce++
+Client->>Client: Verify By Server_Seed_A, Client_Seed_A
+end
+&lt;/div>
+&lt;h2 id="機制概述">機制概述&lt;/h2>
+&lt;p>根據 &lt;strong>伺服器種子(Server_Seed)&lt;/strong> 與 &lt;strong>玩家種子(Client_Seed)&lt;/strong> 產生雜湊字串(SHA512)，根據其字串上取得該遊戲結果。&lt;br>
+並於是前給予玩家 &lt;strong>已經雜湊的伺服器種子(Hashed_Server_Seed)&lt;/strong> ，使玩家可以事後與 &lt;strong>伺服器種子(Server_Seed)&lt;/strong> 做雜湊驗證，讓玩家確保沒有作弊的可能性。&lt;/p>
+&lt;h2 id="驗證需求">驗證需求&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>欄位&lt;/th>
+&lt;th>意義&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Hashed_Server_Seed&lt;/td>
+&lt;td>於下注前給玩家&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Server_Seed&lt;/td>
+&lt;td>玩家更換 Client Seed 的時候再給玩家&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Client_Seed&lt;/td>
+&lt;td>玩家可以自行更新&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Nonce&lt;/td>
+&lt;td>隨下注次數增加(從&amp;quot;1&amp;quot;開始)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>
