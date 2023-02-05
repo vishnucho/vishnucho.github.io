@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>game on 守護台灣 - Vishnu卓</title><link>https://vishnucho.github.io/tags/game/</link><description>Recent content in game on 守護台灣 - Vishnu卓</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 07 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://vishnucho.github.io/tags/game/rss.xml" rel="self" type="application/rss+xml"/><item><title>遊戲期望RTP動態調整 - 事前控制 preControl</title><link>https://vishnucho.github.io/math/precontrol-mech/</link><pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/math/precontrol-mech/</guid><description>&lt;h1 id="遊戲期望rtp動態調整---事前控制-precontrol">遊戲期望RTP動態調整 - 事前控制 precontrol&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>game on 守護台灣 - Vishnu卓</title><link>https://vishnucho.github.io/tags/game/</link><description>Recent content in game on 守護台灣 - Vishnu卓</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 07 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://vishnucho.github.io/tags/game/rss.xml" rel="self" type="application/rss+xml"/><item><title>遊戲期望RTP動態調整 - 事前控制 preControl</title><link>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/precontrol-mech/</link><pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/precontrol-mech/</guid><description>&lt;h1 id="遊戲期望rtp動態調整---事前控制-precontrol">遊戲期望RTP動態調整 - 事前控制 precontrol&lt;/h1>
 &lt;p>設計原生遊戲時, RTP與HitRate要足夠高&lt;br>
 在玩遊戲的時候, 根據期望RTP事先骰出此局要玩原生遊戲或必不中獎遊戲&lt;br>
 RTP可動態範圍 [0,basisRTP]&lt;/p>
@@ -6,13 +6,13 @@ RTP可動態範圍 [0,basisRTP]&lt;/p>
 graph LR
 A["指定某個expectRTP"]--"有expectRTP/basisRTP機率"--->B("原生遊戲 RTP=basisRTP")
 A--"有1-expectRTP/basisRTP機率"-->C["必不中遊戲 RTP=0"]
-&lt;/div></description></item><item><title>Jackpot系統分析 Jackpot System</title><link>https://vishnucho.github.io/math/jp-system/</link><pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/math/jp-system/</guid><description>&lt;h1 id="jackpot系統分析-jackpot-system">Jackpot系統分析 Jackpot System&lt;/h1>
+&lt;/div></description></item><item><title>Jackpot系統分析 Jackpot System</title><link>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/jp-system/</link><pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/jp-system/</guid><description>&lt;h1 id="jackpot系統分析-jackpot-system">Jackpot系統分析 Jackpot System&lt;/h1>
 &lt;h2 id="模型">模型&lt;/h2>
 &lt;ol>
 &lt;li>每次下注(BetAmount)有一定比例(BetJpRatio)放入Jp池&lt;/li>
 &lt;li>每次下注有(1/HitFrequency)機率觸發拉獎, 拉獎金額為目前(Jp池大小 x PullRatio)&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://vishnucho.github.io/imgs/img-lazy-loading.gif" data-src="https://vishnucho.github.io/assets/img/jp_system_1.png" alt="jp_system_1" title="Jp累積值對下注次數折線圖" />&lt;/p></description></item><item><title>遊戲殺率控制理論 Game RTP Control Theory</title><link>https://vishnucho.github.io/math/rtp_control_theory/</link><pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/math/rtp_control_theory/</guid><description>&lt;h1 id="遊戲殺率控制理論-game-rtp-control-theory">遊戲殺率控制理論 Game RTP Control Theory&lt;/h1>
+&lt;p>&lt;img src="https://vishnucho.github.io/imgs/img-lazy-loading.gif" data-src="https://vishnucho.github.io/assets/img/jp_system_1.png" alt="jp_system_1" title="Jp累積值對下注次數折線圖" />&lt;/p></description></item><item><title>遊戲殺率控制理論 Game RTP Control Theory</title><link>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/rtp_control_theory/</link><pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/rtp_control_theory/</guid><description>&lt;h1 id="遊戲殺率控制理論-game-rtp-control-theory">遊戲殺率控制理論 Game RTP Control Theory&lt;/h1>
 &lt;h2 id="rtp動態調整---避免過大波動">RTP動態調整 - 避免過大波動&lt;/h2>
 &lt;p>如果一個原生遊戲玩法如下:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>下注 $1
@@ -35,7 +35,7 @@ A--"有1-expectRTP/basisRTP機率"-->C["必不中遊戲 RTP=0"]
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 55% 概率額外獲得$0.95(共獲得$1.95)
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 45% 概率失去下注額
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://vishnucho.github.io/imgs/img-lazy-loading.gif" data-src="https://vishnucho.github.io/assets/img/with_control.png" alt="with_control" title="有控制的餘額折線圖" />&lt;/p></description></item><item><title>遊戲槓桿規則 Leverage Rule</title><link>https://vishnucho.github.io/math/leverage-rule/</link><pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/math/leverage-rule/</guid><description>&lt;h1 id="遊戲槓桿規則-leverage-rule">遊戲槓桿規則 Leverage Rule&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://vishnucho.github.io/imgs/img-lazy-loading.gif" data-src="https://vishnucho.github.io/assets/img/with_control.png" alt="with_control" title="有控制的餘額折線圖" />&lt;/p></description></item><item><title>遊戲槓桿規則 Leverage Rule</title><link>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/leverage-rule/</link><pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/leverage-rule/</guid><description>&lt;h1 id="遊戲槓桿規則-leverage-rule">遊戲槓桿規則 Leverage Rule&lt;/h1>
 &lt;p>包含&lt;strong>以小博大&lt;/strong>與&lt;strong>不夠賠&lt;/strong>的計算分析&lt;/p>
 &lt;h2 id="天條">天條&lt;/h2>
 &lt;ul>
@@ -45,7 +45,7 @@ A--"有1-expectRTP/basisRTP機率"-->C["必不中遊戲 RTP=0"]
 &lt;h2 id="一般化複數玩家贏錢且複數玩家輸錢">一般化(複數玩家贏錢且複數玩家輸錢)&lt;/h2>
 &lt;h3 id="實作邏輯">實作邏輯&lt;/h3>
 &lt;p>總輸分 = 所有觸發不夠賠的輸家攜帶金額 + 正常輸家輸的金額&lt;br>
-總贏分 = 所有觸發以小搏大的贏家攜帶金額 + 正常贏家贏的金額&lt;/p></description></item><item><title>遊戲期望RTP動態調整 - 重擲控制 Reroll</title><link>https://vishnucho.github.io/math/reroll-mech/</link><pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/math/reroll-mech/</guid><description>&lt;h1 id="遊戲動態rtp調整方案---重擲控制-reroll">遊戲動態RTP調整方案 - 重擲控制 Reroll&lt;/h1>
+總贏分 = 所有觸發以小搏大的贏家攜帶金額 + 正常贏家贏的金額&lt;/p></description></item><item><title>遊戲期望RTP動態調整 - 重擲控制 Reroll</title><link>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/reroll-mech/</link><pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/reroll-mech/</guid><description>&lt;h1 id="遊戲動態rtp調整方案---重擲控制-reroll">遊戲動態RTP調整方案 - 重擲控制 Reroll&lt;/h1>
 &lt;p>固定RTP玩法的遊戲，藉由&lt;strong>重擲控制&lt;/strong>可變成可動態調整RTP的遊戲。&lt;/p>
 &lt;div class="mermaid" align="center" >
 graph LR
@@ -55,7 +55,7 @@ A["固定RTP"]-->B(重擲RTP控制)-->C["根據重擲機率n決定期望RTP"]
 &lt;ol>
 &lt;li>若要降低RTP時，在其&lt;strong>中獎&lt;/strong>時有概率重擲其遊戲結果&lt;/li>
 &lt;li>若要上升RTP時，在其&lt;strong>未中獎&lt;/strong>時有概率重擲其遊戲結果&lt;/li>
-&lt;/ol></description></item><item><title>公正雜湊驗證機制</title><link>https://vishnucho.github.io/math/provably-fair/</link><pubDate>Sat, 28 May 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/math/provably-fair/</guid><description>&lt;h1 id="公正雜湊驗證機制">公正雜湊驗證機制&lt;/h1>
+&lt;/ol></description></item><item><title>公正雜湊驗證機制</title><link>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/provably-fair/</link><pubDate>Sat, 28 May 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/provably-fair/</guid><description>&lt;h1 id="公正雜湊驗證機制">公正雜湊驗證機制&lt;/h1>
 &lt;p>根據雜湊不可逆原理達成的玩家信任機制。&lt;/p>
 &lt;h2 id="玩家驗證角度看流程圖">玩家驗證角度看流程圖&lt;/h2>
 &lt;div class="mermaid" align="center" >
@@ -101,7 +101,7 @@ end
 &lt;td>隨下注次數增加(從&amp;quot;1&amp;quot;開始)&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>常見遊戲道具強化機制-保底強化模型</title><link>https://vishnucho.github.io/math/guaranteed-strengthen/</link><pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/math/guaranteed-strengthen/</guid><description>&lt;h1 id="常見遊戲道具強化機制-保底強化模型">常見遊戲道具強化機制-保底強化模型&lt;/h1>
+&lt;/table></description></item><item><title>常見遊戲道具強化機制-保底強化模型</title><link>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/guaranteed-strengthen/</link><pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/guaranteed-strengthen/</guid><description>&lt;h1 id="常見遊戲道具強化機制-保底強化模型">常見遊戲道具強化機制-保底強化模型&lt;/h1>
 &lt;h2 id="命題">命題&lt;/h2>
 &lt;p>給定固定強化成功率x與固定保底值T，求成功強化的期望次數&lt;/p>
 &lt;h3 id="保底強化模型規則">保底強化模型規則&lt;/h3>
