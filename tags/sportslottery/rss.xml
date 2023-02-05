@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sportslottery on 守護台灣 - Vishnu卓</title><link>https://vishnucho.github.io/tags/sportslottery/</link><description>Recent content in sportslottery on 守護台灣 - Vishnu卓</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 22 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://vishnucho.github.io/tags/sportslottery/rss.xml" rel="self" type="application/rss+xml"/><item><title>賠率設計模式</title><link>https://vishnucho.github.io/bet/design/</link><pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/bet/design/</guid><description>&lt;h1 id="賠率設計模式">賠率設計模式&lt;/h1>
+&lt;h2 id="單訊號源">單訊號源&lt;/h2>
+&lt;div class="mermaid" align="center" >
+graph LR
+原始訊號 --> 盈利模組AdjustMargin --> Client
+&lt;/div>
+&lt;h2 id="多訊號源">多訊號源&lt;/h2>
+&lt;p>&lt;code>設計重點： 權重分配&lt;/code>&lt;/p>
+&lt;div class="mermaid" align="center" >
+graph LR
+原始訊號A --> 盈利模組AdjustMargin --> 同利潤之訊號A --權重A-->權重計算器
+原始訊號B --> 盈利模組AdjustMargin --> 同利潤之訊號B --權重B-->權重計算器
+原始訊號C --> 盈利模組AdjustMargin --> 同利潤之訊號C --權重C-->權重計算器--> Client
+&lt;/div></description></item><item><title>彩票動態調整賠率機制</title><link>https://vishnucho.github.io/bet/dynamic-adjust/</link><pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/bet/dynamic-adjust/</guid><description>&lt;h1 id="彩票動態調整賠率機制">彩票動態調整賠率機制&lt;/h1>
+&lt;h2 id="賠率操作機制">賠率操作機制&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>狀態&lt;/th>
+&lt;th>描述&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>手動狀態&lt;/td>
+&lt;td>由操盤手控管，完全不觸發風險控管。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>自動狀態&lt;/td>
+&lt;td>忽略操盤手的控制。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="手動狀態">手動狀態&lt;/h2>
+&lt;div class="mermaid" align="center" >
+graph LR
+原始訊號 --> 盈利模組AdjustMargin --> 操盤手控管 --> Client
+&lt;/div>
+&lt;h2 id="自動狀態">自動狀態&lt;/h2>
+&lt;ul>
+&lt;li>原始訊號賠率異動&lt;/li>
+&lt;li>新增注單導致風險異動&lt;/li>
+&lt;/ul>
+&lt;div class="mermaid" align="center" >
+graph LR
+原始訊號或新增注單 --> 風險控管AdjustRisk --> A{賠率調整大小}--"不超過調整百分比"--> 盈利模組AdjustMargin --> Client
+A{賠率調整大小}--"超過調整百分比"-->排程器--"第1週期"--> 盈利模組AdjustMargin
+排程器--"第2週期"--> 盈利模組AdjustMargin
+排程器--"第3週期"--> 盈利模組AdjustMargin
+排程器--"..."--> 盈利模組AdjustMargin
+&lt;/div></description></item><item><title>彩票技術綜合研究</title><link>https://vishnucho.github.io/bet/research/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/bet/research/</guid><description>&lt;h1 id="彩票技術綜合研究">彩票技術綜合研究&lt;/h1>
+&lt;h2 id="賠率表示法">賠率表示法&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>項目&lt;/th>
+&lt;th>items&lt;/th>
+&lt;th>Team A&lt;/th>
+&lt;th>Team B&lt;/th>
+&lt;th>Draw&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>機率&lt;/td>
+&lt;td>Probability&lt;/td>
+&lt;td>55%&lt;/td>
+&lt;td>25%&lt;/td>
+&lt;td>20%&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>小數賠率&lt;/td>
+&lt;td>Decimal&lt;/td>
+&lt;td>1.82&lt;/td>
+&lt;td>4.0&lt;/td>
+&lt;td>5.0&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>分數賠率&lt;/td>
+&lt;td>Fractional&lt;/td>
+&lt;td>4/5&lt;/td>
+&lt;td>3/1&lt;/td>
+&lt;td>4/1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>美式賠率&lt;/td>
+&lt;td>Moneyline&lt;/td>
+&lt;td>-122&lt;/td>
+&lt;td>300&lt;/td>
+&lt;td>400&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>香港賠率&lt;/td>
+&lt;td>Hong Kong Odds&lt;/td>
+&lt;td>0.8182&lt;/td>
+&lt;td>3&lt;/td>
+&lt;td>4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>印尼賠率&lt;/td>
+&lt;td>Indonesian Odds&lt;/td>
+&lt;td>-1.2222&lt;/td>
+&lt;td>3.0&lt;/td>
+&lt;td>4.0&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>馬來賠率&lt;/td>
+&lt;td>Malay Odds&lt;/td>
+&lt;td>0.8182&lt;/td>
+&lt;td>-0.3333&lt;/td>
+&lt;td>-0.25&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;blockquote>
+&lt;p>本文若無特殊說明，以小數賠率(Decimal)為參考&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
