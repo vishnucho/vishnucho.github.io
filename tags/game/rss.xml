@@ -101,7 +101,16 @@ end
 &lt;td>隨下注次數增加(從&amp;quot;1&amp;quot;開始)&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>常見遊戲道具強化機制-保底強化模型</title><link>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/guaranteed-strengthen/</link><pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/guaranteed-strengthen/</guid><description>&lt;h1 id="常見遊戲道具強化機制-保底強化模型">常見遊戲道具強化機制-保底強化模型&lt;/h1>
+&lt;/table></description></item><item><title>LoR蘑菇 - 陷阱卡抽取問題</title><link>https://vishnucho.github.io/post/%E9%81%8A%E6%88%B2%E5%88%86%E6%9E%90/lor-teemo-mushroom/</link><pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/post/%E9%81%8A%E6%88%B2%E5%88%86%E6%9E%90/lor-teemo-mushroom/</guid><description>&lt;h1 id="lor蘑菇---陷阱卡抽取問題">LoR蘑菇 - 陷阱卡抽取問題&lt;/h1>
+&lt;p>&lt;img src="https://vishnucho.github.io/imgs/img-lazy-loading.gif" data-src="https://vishnucho.github.io/assets/img/teemo.png" alt="teemo" title="LoR提摩蘑菇展示" />&lt;/p>
+&lt;h2 id="蘑菇陷阱卡說明">蘑菇陷阱卡說明&lt;/h2>
+&lt;ol>
+&lt;li>蘑菇會隨機種在牌庫的其中一張牌&lt;/li>
+&lt;li>一張牌上可以有複數個蘑菇&lt;/li>
+&lt;/ol>
+&lt;h2 id="命題">命題&lt;/h2>
+&lt;p>給定一牌庫數量n,牌庫裡蘑菇總數量m
+求此次抽取的牌上共有幾個蘑菇？&lt;/p></description></item><item><title>常見遊戲道具強化機制-保底強化模型</title><link>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/guaranteed-strengthen/</link><pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/post/%E6%95%B8%E5%AD%B8%E5%88%86%E6%9E%90/guaranteed-strengthen/</guid><description>&lt;h1 id="常見遊戲道具強化機制-保底強化模型">常見遊戲道具強化機制-保底強化模型&lt;/h1>
 &lt;h2 id="命題">命題&lt;/h2>
 &lt;p>給定固定強化成功率x與固定保底值T，求成功強化的期望次數&lt;/p>
 &lt;h3 id="保底強化模型規則">保底強化模型規則&lt;/h3>
@@ -122,4 +131,17 @@ E_v &amp;amp;= \frac{1}{x} \cr
 \end{align} $$&lt;/p>
 &lt;h3 id="保底模型">保底模型&lt;/h3>
 &lt;p>期望值=T次內期望值+T*(1-T次內成功機率)&lt;/p>
-&lt;p>$E_v=\frac{1-(1-x)^T (1+Tx)}{x}+T(1-x)^T$&lt;/p></description></item></channel></rss>
+&lt;p>$E_v=\frac{1-(1-x)^T (1+Tx)}{x}+T(1-x)^T$&lt;/p></description></item><item><title>LoR遠征 - 雙淘汰賽制分析</title><link>https://vishnucho.github.io/post/%E9%81%8A%E6%88%B2%E5%88%86%E6%9E%90/lor-arena-7wins/</link><pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/post/%E9%81%8A%E6%88%B2%E5%88%86%E6%9E%90/lor-arena-7wins/</guid><description>&lt;h1 id="lor遠征---雙淘汰賽制分析">LoR遠征 - 雙淘汰賽制分析&lt;/h1>
+&lt;p>&lt;img src="https://vishnucho.github.io/imgs/img-lazy-loading.gif" data-src="https://vishnucho.github.io/assets/img/lor-arena-7wins.jpg" alt="lor-arena-7wins" title="LoR遠征展示" />&lt;/p>
+&lt;h2 id="規則">規則&lt;/h2>
+&lt;ol>
+&lt;li>七勝出場&lt;/li>
+&lt;li>連續兩敗出場&lt;/li>
+&lt;li>挑戰第七勝時僅有一次敗局機會&lt;/li>
+&lt;li>每枚代幣共可參加兩場&lt;/li>
+&lt;li>兩場中成績較優者為獎勵發放條件&lt;/li>
+&lt;/ol>
+&lt;h2 id="隱含條件">隱含條件&lt;/h2>
+&lt;p>實力表示每一局勝利的概率(期望勝率)&lt;/p>
+&lt;h2 id="命題">命題&lt;/h2>
+&lt;p>求實力要多高才能有一半的機率用一枚代幣獲得七勝獎勵&lt;/p></description></item></channel></rss>

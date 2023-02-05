@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>game on 守護台灣 - Vishnu卓</title><link>https://vishnucho.github.io/categories/game/</link><description>Recent content in game on 守護台灣 - Vishnu卓</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vishnucho.github.io/categories/game/rss.xml" rel="self" type="application/rss+xml"/><item><title>LoR蘑菇 - 陷阱卡抽取問題</title><link>https://vishnucho.github.io/post/%E9%81%8A%E6%88%B2%E5%88%86%E6%9E%90/lor-teemo-mushroom/</link><pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/post/%E9%81%8A%E6%88%B2%E5%88%86%E6%9E%90/lor-teemo-mushroom/</guid><description>&lt;h1 id="lor蘑菇---陷阱卡抽取問題">LoR蘑菇 - 陷阱卡抽取問題&lt;/h1>
+&lt;p>&lt;img src="https://vishnucho.github.io/imgs/img-lazy-loading.gif" data-src="https://vishnucho.github.io/assets/img/teemo.png" alt="teemo" title="LoR提摩蘑菇展示" />&lt;/p>
+&lt;h2 id="蘑菇陷阱卡說明">蘑菇陷阱卡說明&lt;/h2>
+&lt;ol>
+&lt;li>蘑菇會隨機種在牌庫的其中一張牌&lt;/li>
+&lt;li>一張牌上可以有複數個蘑菇&lt;/li>
+&lt;/ol>
+&lt;h2 id="命題">命題&lt;/h2>
+&lt;p>給定一牌庫數量n,牌庫裡蘑菇總數量m
+求此次抽取的牌上共有幾個蘑菇？&lt;/p></description></item><item><title>LoR遠征 - 雙淘汰賽制分析</title><link>https://vishnucho.github.io/post/%E9%81%8A%E6%88%B2%E5%88%86%E6%9E%90/lor-arena-7wins/</link><pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate><guid>https://vishnucho.github.io/post/%E9%81%8A%E6%88%B2%E5%88%86%E6%9E%90/lor-arena-7wins/</guid><description>&lt;h1 id="lor遠征---雙淘汰賽制分析">LoR遠征 - 雙淘汰賽制分析&lt;/h1>
+&lt;p>&lt;img src="https://vishnucho.github.io/imgs/img-lazy-loading.gif" data-src="https://vishnucho.github.io/assets/img/lor-arena-7wins.jpg" alt="lor-arena-7wins" title="LoR遠征展示" />&lt;/p>
+&lt;h2 id="規則">規則&lt;/h2>
+&lt;ol>
+&lt;li>七勝出場&lt;/li>
+&lt;li>連續兩敗出場&lt;/li>
+&lt;li>挑戰第七勝時僅有一次敗局機會&lt;/li>
+&lt;li>每枚代幣共可參加兩場&lt;/li>
+&lt;li>兩場中成績較優者為獎勵發放條件&lt;/li>
+&lt;/ol>
+&lt;h2 id="隱含條件">隱含條件&lt;/h2>
+&lt;p>實力表示每一局勝利的概率(期望勝率)&lt;/p>
+&lt;h2 id="命題">命題&lt;/h2>
+&lt;p>求實力要多高才能有一半的機率用一枚代幣獲得七勝獎勵&lt;/p></description></item></channel></rss>
